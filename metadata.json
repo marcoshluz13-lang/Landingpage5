@@ -1,0 +1,6 @@
+{
+  "name": "Portfólio de Edição de Vídeo",
+  "description": "Portfólio pessoal e landing page de alta conversão para serviços de edição de vídeo viral (Shorts, Reels, TikTok e anúncios).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
