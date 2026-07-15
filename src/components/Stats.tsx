@@ -12,8 +12,8 @@ export default function Stats() {
     const steps = 60;
     const intervalTime = duration / steps;
 
-    const targetVideos = 185;
-    const targetViews = 24; // Million
+    const targetVideos = 75;
+    const targetViews = 9; // Million
     const targetRetention = 88; // %
 
     let currentStep = 0;

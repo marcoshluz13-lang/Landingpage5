@@ -15,18 +15,18 @@ export default function Pricing() {
 
   const getPriceDisplay = (planId: string) => {
     if (currency === 'BRL') {
-      if (planId === 'on-demand') return { price: 'R$ 180', period: '/ vídeo' };
-      if (planId === 'monthly') return { price: 'R$ 3.490', period: '/ mês' };
-      return { price: 'R$ 8.990', period: '/ mestre' };
+      if (planId === 'on-demand') return { price: 'R$ 250', period: '/ vídeo' };
+      if (planId === 'monthly') return { price: 'R$ 1.500', period: '' };
+      return { price: 'R$ 3.000', period: '' };
     } else {
-      if (planId === 'on-demand') return { price: '$30', period: '/ video' };
-      if (planId === 'monthly') return { price: '$750', period: '/ mo' };
-      return { price: '$2,899', period: '/ mo' };
+      if (planId === 'on-demand') return { price: '$47', period: '/ video' };
+      if (planId === 'monthly') return { price: '$297', period: '' };
+      return { price: '$597', period: '' };
     }
   };
 
   return (
-    <section id="precos" className="bg-brand-dark text-white py-16 md:py-24 relative border-t border-brand-card-light/20">
+    <section id="precos" className="bg-brand-dark text-white pt-6 md:pt-8 pb-6 md:pb-8 relative border-t border-brand-card-light/20">
       <div className="absolute top-0 left-1/3 w-80 h-80 rounded-full bg-brand-gold/5 blur-[150px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -34,7 +34,7 @@ export default function Pricing() {
         {/* Title and Header */}
         <div className="text-center max-w-2xl mx-auto mb-12">
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-black tracking-tight leading-tight text-white">
-            Plans and pricing
+            Plans and Pricing
           </h2>
         </div>
 
@@ -49,9 +49,6 @@ export default function Pricing() {
                   <h3 className="font-display font-black text-xl text-white">On-Demand</h3>
                   <p className="text-xs text-gray-400 mt-1 font-light">Order exactly what you need, when you need it</p>
                 </div>
-                <span className="text-[10px] uppercase font-bold tracking-wider bg-brand-card-light text-white px-2.5 py-1 rounded-md border border-white/5">
-                  One-Off
-                </span>
               </div>
 
               {/* Price */}
@@ -68,33 +65,35 @@ export default function Pricing() {
               <ul className="space-y-3.5 mb-8 border-t border-brand-card-light/50 pt-6">
                 <li className="flex gap-2.5 items-start text-xs text-gray-300">
                   <Check className="w-4 h-4 text-brand-gold shrink-0 mt-0.5" />
-                  <span>Elite trustworthy editors</span>
+                  <span>Delivery within 36 hours</span>
                 </li>
                 <li className="flex gap-2.5 items-start text-xs text-gray-300">
                   <Check className="w-4 h-4 text-brand-gold shrink-0 mt-0.5" />
-                  <span>Highly affordable pricing</span>
+                  <span>3 free revisions</span>
                 </li>
                 <li className="flex gap-2.5 items-start text-xs text-gray-300">
                   <Check className="w-4 h-4 text-brand-gold shrink-0 mt-0.5" />
-                  <span>Pre-defined editing styles</span>
+                  <span>Audio and color correction</span>
                 </li>
                 <li className="flex gap-2.5 items-start text-xs text-gray-300">
                   <Check className="w-4 h-4 text-brand-gold shrink-0 mt-0.5" />
-                  <span>Fully centralized form requests</span>
+                  <span>Customized styles</span>
                 </li>
                 <li className="flex gap-2.5 items-start text-xs text-gray-300">
                   <Check className="w-4 h-4 text-brand-gold shrink-0 mt-0.5" />
-                  <span>Extremely easy to order</span>
+                  <span>Pay after completion</span>
                 </li>
               </ul>
             </div>
 
-            <button
-              onClick={(e) => handleScrollToTrial(e, 'on-demand')}
-              className="w-full py-4 px-4 font-bold text-center text-xs uppercase tracking-wider text-white bg-brand-card-light border border-white/5 hover:bg-brand-card-light/80 hover:border-brand-gold/30 rounded-xl transition-all active:scale-95 cursor-pointer"
+            <a
+              href="https://instagram.com/marcos_luz.editor"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full py-4 px-4 font-bold text-center text-xs uppercase tracking-wider text-white bg-brand-card-light border border-white/5 hover:bg-brand-card-light/80 hover:border-brand-gold/30 rounded-xl transition-all active:scale-95 cursor-pointer block"
             >
-              Start Now
-            </button>
+              contact me
+            </a>
           </div>
 
           {/* Card 2: Monthly (White/Light Grey Theme) */}
@@ -108,8 +107,8 @@ export default function Pricing() {
             <div>
               <div className="flex justify-between items-start mb-6">
                 <div>
-                  <h3 className="font-display font-black text-xl text-white">Monthly Premium</h3>
-                  <p className="text-xs text-gray-400 mt-1 font-light">Complete package with 30 videos</p>
+                  <h3 className="font-display font-black text-xl text-white">Weekly</h3>
+                  <p className="text-xs text-gray-400 mt-1 font-light">Complete package with 7 videos</p>
                 </div>
                 <span className="text-[10px] uppercase font-black tracking-wider bg-brand-gold text-black px-2.5 py-1 rounded-md">
                   Most Popular
@@ -130,33 +129,39 @@ export default function Pricing() {
               <ul className="space-y-3.5 mb-8 border-t border-brand-card-light/50 pt-6">
                 <li className="flex gap-2.5 items-start text-xs text-gray-300">
                   <Check className="w-4 h-4 text-brand-gold shrink-0 mt-0.5" />
-                  <span>Exclusive reliable editors</span>
-                </li>
-                <li className="flex gap-2.5 items-start text-xs text-gray-300">
-                  <Check className="w-4 h-4 text-brand-gold shrink-0 mt-0.5" />
                   <span>Personal 24/7 WhatsApp Support</span>
                 </li>
                 <li className="flex gap-2.5 items-start text-xs text-gray-300">
                   <Check className="w-4 h-4 text-brand-gold shrink-0 mt-0.5" />
-                  <span>Use requests whenever you want</span>
+                  <span>Record once and receive within 72 hours</span>
                 </li>
                 <li className="flex gap-2.5 items-start text-xs text-gray-300">
                   <Check className="w-4 h-4 text-brand-gold shrink-0 mt-0.5" />
-                  <span>Secure and easy payments</span>
+                  <span>Audio and color correction</span>
                 </li>
                 <li className="flex gap-2.5 items-start text-xs text-gray-300">
                   <Check className="w-4 h-4 text-brand-gold shrink-0 mt-0.5" />
-                  <span>Unlimited priority revisions</span>
+                  <span>Customized styles</span>
+                </li>
+                <li className="flex gap-2.5 items-start text-xs text-gray-300">
+                  <Check className="w-4 h-4 text-brand-gold shrink-0 mt-0.5" />
+                  <span>2 free revisions for each video</span>
+                </li>
+                <li className="flex gap-2.5 items-start text-xs text-gray-300">
+                  <Check className="w-4 h-4 text-brand-gold shrink-0 mt-0.5" />
+                  <span>Pay after completion</span>
                 </li>
               </ul>
             </div>
 
-            <button
-              onClick={(e) => handleScrollToTrial(e, 'monthly')}
-              className="w-full py-4 px-4 font-bold text-center text-xs uppercase tracking-wider text-black bg-brand-gold hover:bg-brand-gold-glow rounded-xl transition-all active:scale-95 shadow-md cursor-pointer"
+            <a
+              href="https://instagram.com/marcos_luz.editor"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full py-4 px-4 font-bold text-center text-xs uppercase tracking-wider text-black bg-brand-gold hover:bg-brand-gold-glow rounded-xl transition-all active:scale-95 shadow-md cursor-pointer block"
             >
-              Secure Package
-            </button>
+              Contact Me
+            </a>
           </div>
 
           {/* Card 3: Professional (Glowing Gold Theme) */}
@@ -164,18 +169,15 @@ export default function Pricing() {
             
             {/* Top Badge */}
             <div className="absolute top-0 right-8 -translate-y-1/2 bg-brand-gold text-black text-[9px] uppercase font-black tracking-widest px-3 py-1.5 rounded-full shadow-lg border border-brand-gold/10">
-              Whitelabel Enabled
+              PERSONAL 24/7 WHATSAPP
             </div>
 
             <div>
               <div className="flex justify-between items-start mb-6">
                 <div>
-                  <h3 className="font-display font-black text-xl text-white">Professional</h3>
-                  <p className="text-xs text-gray-400 mt-1 font-light">Your dedicated full-time editor</p>
+                  <h3 className="font-display font-black text-xl text-white">Ultra</h3>
+                  <p className="text-xs text-gray-400 mt-1 font-light">Complete package with 15 videos</p>
                 </div>
-                <span className="text-[10px] uppercase font-bold tracking-wider bg-brand-gold text-black px-2.5 py-1 rounded-md font-black">
-                  Full-Time
-                </span>
               </div>
 
               {/* Price */}
@@ -192,42 +194,61 @@ export default function Pricing() {
               <ul className="space-y-3.5 mb-8 border-t border-brand-card-light/50 pt-6">
                 <li className="flex gap-2.5 items-start text-xs text-white">
                   <Check className="w-4 h-4 text-brand-gold shrink-0 mt-0.5" />
-                  <span>Dedicated team of senior editors</span>
+                  <span>Personal 24/7 WhatsApp Support</span>
                 </li>
                 <li className="flex gap-2.5 items-start text-xs text-white">
                   <Check className="w-4 h-4 text-brand-gold shrink-0 mt-0.5" />
-                  <span>High-speed infrastructure & fast turnaround</span>
+                  <span>Record once and receive within 5 days</span>
                 </li>
                 <li className="flex gap-2.5 items-start text-xs text-white">
                   <Check className="w-4 h-4 text-brand-gold shrink-0 mt-0.5" />
-                  <span>Custom-tailored editing styles & unique branding</span>
+                  <span>Audio and color correction</span>
                 </li>
                 <li className="flex gap-2.5 items-start text-xs text-white">
                   <Check className="w-4 h-4 text-brand-gold shrink-0 mt-0.5" />
-                  <span>Your own dedicated support team</span>
+                  <span>Customized styles</span>
                 </li>
                 <li className="flex gap-2.5 items-start text-xs text-white">
                   <Check className="w-4 h-4 text-brand-gold shrink-0 mt-0.5" />
-                  <span>Strategic guidance with concepts & scripting</span>
+                  <span>2 free revisions for each video</span>
                 </li>
                 <li className="flex gap-2.5 items-start text-xs text-white">
                   <Check className="w-4 h-4 text-brand-gold shrink-0 mt-0.5" />
-                  <span>Pause or cancel anytime</span>
+                  <span>Pay after completion</span>
                 </li>
               </ul>
             </div>
 
             <a
-              href="https://wa.me/5511999999999?text=Hi%21+I+would+like+to+learn+more+about+the+Dedicated+Professional+plan+from+your+video+editing+portfolio."
+              href="https://instagram.com/marcos_luz.editor"
               target="_blank"
               rel="noopener noreferrer"
               className="w-full py-4 px-4 font-bold text-center text-xs uppercase tracking-wider text-black bg-brand-gold hover:bg-brand-gold-glow rounded-xl transition-all active:scale-95 shadow-md flex items-center justify-center gap-1.5 focus:outline-none"
             >
-              Chat with Marcos
+              Contact Me
             </a>
           </div>
 
         </div>
+
+        {/* Disclaimer Text Box */}
+        <div id="pricing-disclaimer" className="mt-12 max-w-2xl mx-auto bg-brand-card/40 border border-brand-card-light/25 p-5 sm:p-6 rounded-2xl shadow-lg">
+          <ul className="text-left text-[11px] sm:text-xs text-neutral-400 font-normal space-y-2.5 leading-relaxed tracking-wide">
+            <li className="flex items-start gap-2">
+              <span className="text-brand-gold font-bold text-xs mt-0.5">*</span>
+              <span>Payment via PayPal</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-brand-gold font-bold text-xs mt-0.5">*</span>
+              <span>Record your content in portrait orientation, preferably in a well-lit environment</span>
+            </li>
+            <li className="flex items-start gap-2">
+              <span className="text-brand-gold font-bold text-xs mt-0.5">*</span>
+              <span>Send a single file containing all the complete recordings within 24 hours for the Weekly plan and within 48 hours for the Ultra plan</span>
+            </li>
+          </ul>
+        </div>
+
       </div>
     </section>
   );

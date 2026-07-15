@@ -1,5 +1,5 @@
 import React from 'react';
-import { Eye, Flame, Award, BarChart3, Clock } from 'lucide-react';
+import { Eye, Award, BarChart3, Clock } from 'lucide-react';
 
 export default function ResultsPortfolio() {
   return (
@@ -12,21 +12,18 @@ export default function ResultsPortfolio() {
           {/* Left Card: Main statistics breakdown */}
           <div className="lg:col-span-4 bg-brand-card p-6 md:p-8 rounded-3xl border border-brand-card-light flex flex-col justify-between shadow-2xl">
             <div className="space-y-4">
-              <div className="inline-flex items-center justify-center p-3 rounded-2xl bg-brand-gold/10 border border-brand-gold/20 text-brand-gold mb-2 shadow-[0_0_15px_rgba(223,177,91,0.1)]">
-                <Flame className="w-6 h-6 fill-current" />
-              </div>
               <h3 className="font-display text-2xl font-black text-white">
                 The Secret is Retention
               </h3>
               <p className="text-gray-400 text-sm leading-relaxed font-light">
-                Algorithms like TikTok and Instagram Reels prioritize just one metric: **Watch Time (Retention)**. Our edits keep the viewer fully engaged through a continuous flow of visual stimulants and recurring hooks.
+                Algorithms prioritize just one metric: **Watch Time (Retention)**. My edits keep the viewer fully engaged through a continuous flow of visual stimulants and seamless transitions.
               </p>
             </div>
 
             <div className="space-y-4 pt-6 border-t border-brand-card-light/60 mt-6">
               <div className="flex items-center gap-3">
                 <div className="w-2 h-2 rounded-full bg-brand-gold animate-ping" />
-                <span className="text-xs font-mono font-bold uppercase text-brand-gold tracking-wider">Channel Growth</span>
+                <span className="text-xs font-mono font-bold uppercase text-brand-gold tracking-wider">Profile Growth</span>
               </div>
               <div className="text-3xl font-display font-black text-white">
                 +340% <span className="text-sm text-brand-gold font-bold font-sans">Organic Views</span>
@@ -43,7 +40,7 @@ export default function ResultsPortfolio() {
                   <span className="font-display font-bold text-sm tracking-wide uppercase text-neutral-300">Average Audience Retention</span>
                 </div>
                 <div className="flex items-center gap-4 text-xs font-semibold">
-                  <span className="flex items-center gap-1.5"><span className="w-3 h-3 bg-brand-gold rounded-full" /> Our Model</span>
+                  <span className="flex items-center gap-1.5"><span className="w-3 h-3 bg-brand-gold rounded-full" /> My Model</span>
                   <span className="flex items-center gap-1.5"><span className="w-3 h-3 bg-gray-600 rounded-full" /> Standard Edit</span>
                 </div>
               </div>

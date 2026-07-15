@@ -57,8 +57,8 @@ export default function Header() {
                 <Video className="w-5 h-5 text-brand-gold" />
                 <span className="absolute -top-0.5 -right-0.5 w-2 h-2 rounded-full bg-brand-gold animate-pulse" />
               </div>
-              <span className="font-display text-2xl font-black tracking-tighter text-white">
-                luz<span className="text-brand-gold">edit</span>
+              <span className="font-mono text-lg font-bold tracking-widest uppercase text-white">
+                Marcos<span className="text-brand-gold">Edits</span>
               </span>
             </a>
           </div>
@@ -85,7 +85,7 @@ export default function Header() {
               className="inline-flex items-center gap-1.5 px-4 py-2 text-xs font-black uppercase tracking-wider text-black bg-brand-gold hover:bg-brand-gold-glow rounded-lg transition-all active:scale-95 shadow-[0_4px_20px_rgba(223,177,91,0.25)]"
             >
               <Play className="w-3.5 h-3.5 fill-current" />
-              Try for $1.90
+              Try for $0
             </a>
           </nav>
 
@@ -124,7 +124,7 @@ export default function Header() {
                 className="flex items-center justify-center gap-2 w-full py-3 px-4 font-black text-center text-sm tracking-wider text-black bg-brand-gold hover:bg-brand-gold-glow rounded-lg transition-colors active:scale-95"
               >
                 <Play className="w-4 h-4 fill-current" />
-                TRY VIDEO FOR $1.90
+                TRY VIDEO FOR $0
               </a>
             </div>
           </div>

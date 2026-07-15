@@ -1,14 +1,26 @@
 import React, { useState, useEffect } from 'react';
-import { Play, Pause, ChevronLeft, ChevronRight, Image as ImageIcon } from 'lucide-react';
+import { ChevronLeft, ChevronRight } from 'lucide-react';
+// @ts-ignore
+import millionaireImg from '../assets/images/millionaire_cigar_edit_1783689617897.jpg';
+// @ts-ignore
+import jayShettyImg from '../assets/images/jay_shetty_style_1783693150062.jpg';
+// @ts-ignore
+import devinJathoImg from '../assets/images/devin_jatho_style_1783693602855.jpg';
+// @ts-ignore
+import bymaximiseStyleImg from '../assets/images/bymaximise_style_ui_1783693790261.jpg';
+// @ts-ignore
+import alexHormoziImg from '../assets/images/alex_hormozi_style_1783694019109.jpg';
+// @ts-ignore
+import basicStyleImg from '../assets/images/basic_style_ui_1783694301055.jpg';
 
 const CAROUSEL_IMAGES = [
   {
     id: 1,
-    imageUrl: "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?q=80&w=600&auto=format&fit=crop",
-    label: "Fitness Style",
-    title: "High-Energy Reels",
-    description: "Designed with fast-paced cuts, high contrast grading, and punchy captions that emphasize physical milestones. Captures viewers instantly and keeps adrenaline high.",
-    highlights: ["Fast-paced cuts", "High-contrast grading", "Adrenaline hooks"],
+    imageUrl: millionaireImg,
+    label: "Finance Style",
+    title: "Iman Gadzhi Style — Minimalist & Luxurious",
+    description: "Clean cuts, slow-paced motion, and a premium feel — perfect for brands that want to look sophisticated and high-end.",
+    highlights: ["Luxury warm grading", "Status typography", "Authority hooks"],
     captions: [
       { text: "WELCOME!", color: "text-brand-gold" },
       { text: "THIS REEL WAS EDITED...", color: "text-white" },
@@ -21,10 +33,10 @@ const CAROUSEL_IMAGES = [
   },
   {
     id: 2,
-    imageUrl: "https://images.unsplash.com/photo-1590602847861-f357a9332bbc?q=80&w=600&auto=format&fit=crop",
+    imageUrl: jayShettyImg,
     label: "Podcast Highlight",
-    title: "Engaging Conversational Snippets",
-    description: "Rhythmic animations and contextual highlights designed to make verbal ideas visual. Perfect for keeping viewers engaged during talking-head clips.",
+    title: "Minimalistic Style — Less Is More",
+    description: "Sharp cuts, elegant graphics, and strategic negative space — designed to eliminate distraction and sharpen focus.",
     highlights: ["Auto-highlights", "Rhythmic zoom", "Focus frames"],
     captions: [
       { text: "DID YOU KNOW?", color: "text-brand-gold" },
@@ -37,45 +49,11 @@ const CAROUSEL_IMAGES = [
     ]
   },
   {
-    id: 3,
-    imageUrl: "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?q=80&w=600&auto=format&fit=crop",
-    label: "Minimalist Tech",
-    title: "Ultra-Premium Tech Showcase",
-    description: "Focuses on clean, aesthetic setups, slow panning shots, and high-fidelity color grading. Perfect for products, setups, and satisfying desk tours.",
-    highlights: ["Premium LUTs", "Micro-zooms", "Slick textures"],
-    captions: [
-      { text: "THE PERFECT SETUP", color: "text-brand-gold" },
-      { text: "CLEAN. MINIMAL. SEXY.", color: "text-white" },
-      { text: "BUT HOW DO YOU FILM IT? 📸", color: "text-brand-gold" },
-      { text: "IT'S ALL IN THE EDITS!", color: "text-cyan-400" },
-      { text: "COLOR GRADING 🔥", color: "text-brand-gold" },
-      { text: "DYNAMIC ZOOM-INS 🔍", color: "text-white" },
-      { text: "MAKE IT LOOK PREMIUM!", color: "text-green-400" }
-    ]
-  },
-  {
-    id: 4,
-    imageUrl: "https://images.unsplash.com/photo-1556910103-1c02745aae4d?q=80&w=600&auto=format&fit=crop",
-    label: "Express Cooking",
-    title: "Snackable Recipe Cuts",
-    description: "Optimized for extreme pacing with satisfying sound effects (ASMR) and juicy color pops. Makes recipes feel effortless and appetizing in seconds.",
-    highlights: ["ASMR sound design", "Vibrant colors", "Action cuts"],
-    captions: [
-      { text: "HUNGRY FOR VIEWS?", color: "text-brand-gold" },
-      { text: "DELICIOUS EDITS...", color: "text-white" },
-      { text: "SERVED IN 15 SECONDS! ⏱️", color: "text-brand-gold" },
-      { text: "SOUND EFFECTS 🔊", color: "text-cyan-400" },
-      { text: "SATISFYING CUTS 🔪", color: "text-brand-gold" },
-      { text: "AND JUICY GRAPHICS 🍔", color: "text-white" },
-      { text: "THEY CAN'T LOOK AWAY!", color: "text-green-400" }
-    ]
-  },
-  {
     id: 5,
-    imageUrl: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=600&auto=format&fit=crop",
+    imageUrl: devinJathoImg,
     label: "Growth Marketing",
-    title: "High-Converting Ads",
-    description: "Starts with psychological pattern-interrupt hooks and keeps viewers locked in with social proof markers, dynamic text bubbles, and clear CTAs.",
+    title: "Devin Jatho Style — Futuristic & Fast-Paced",
+    description: "Rapid cuts, 3D motion graphics, and rotoscope effects create a sleek, futuristic look that keeps viewers glued.",
     highlights: ["Pattern interrupts", "CTA integration", "Conversion focus"],
     captions: [
       { text: "STOP SCROLLING! 🛑", color: "text-brand-gold" },
@@ -89,10 +67,10 @@ const CAROUSEL_IMAGES = [
   },
   {
     id: 6,
-    imageUrl: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?q=80&w=600&auto=format&fit=crop",
+    imageUrl: bymaximiseStyleImg,
     label: "Motivational Speech",
-    title: "Cinematic Inspiration",
-    description: "Dramatically paced edits with letterboxing, slow-motion footage, and deep-toned audio emphasis. Tailored to evoke heavy emotional resonance.",
+    title: "ByMaximise Style — Immersive Cinematography",
+    description: "Text blending, rotoscope masking, and cinematic B-rolls combine for a deeply immersive, emotionally driven visual story.",
     highlights: ["Letterbox styling", "Atmospheric lighting", "Emotional pacing"],
     captions: [
       { text: "DREAM BIG 🌟", color: "text-brand-gold" },
@@ -106,10 +84,10 @@ const CAROUSEL_IMAGES = [
   },
   {
     id: 7,
-    imageUrl: "https://images.unsplash.com/photo-1600861195091-690c92f1d2cc?q=80&w=600&auto=format&fit=crop",
+    imageUrl: alexHormoziImg,
     label: "Gaming Highlights",
-    title: "Adrenaline Game Clips",
-    description: "Slick screen-shake transitions, custom progress tracking lines, and gaming-themed HUD overlay edits. Perfectly timed with beat-drops.",
+    title: "Alex Hormozi Style — High-Energy & Attention-Grabbing",
+    description: "Bold captions, strategic emojis, and punchy cuts — built to stop the scroll and keep viewers hooked from second one.",
     highlights: ["Beat-synced shakes", "Gaming HUD overlays", "Smooth zooms"],
     captions: [
       { text: "PRO GAMEPLAY! 🎮", color: "text-brand-gold" },
@@ -123,10 +101,10 @@ const CAROUSEL_IMAGES = [
   },
   {
     id: 8,
-    imageUrl: "https://images.unsplash.com/photo-1506929562872-bb421503ef21?q=80&w=600&auto=format&fit=crop",
+    imageUrl: basicStyleImg,
     label: "Travel Vlog Style",
-    title: "Aesthetic Wanderlust Journeys",
-    description: "Fluid speed-ramp transitions, warm pastel color grading, and organic camera-roll frames. Immersive edits that make viewers feel they are traveling.",
+    title: "Basic Style — Simple & Effective",
+    description: "Text hooks, image overlays, and interactive captions — a clean, no-frills approach that gets your message across fast.",
     highlights: ["Speed ramping", "Pastel tones", "Film-roll overlays"],
     captions: [
       { text: "LOST IN PARADISE 🏝️", color: "text-brand-gold" },
@@ -137,52 +115,21 @@ const CAROUSEL_IMAGES = [
       { text: "CINEMATIC VIBES 🎥", color: "text-white" },
       { text: "BOOK YOUR TRIP! 🎒", color: "text-green-400" }
     ]
-  },
-  {
-    id: 9,
-    imageUrl: "https://images.unsplash.com/photo-1621416894569-0f39ed31d247?q=80&w=600&auto=format&fit=crop",
-    label: "Fintech & Finance",
-    title: "Professional Financial Guides",
-    description: "Pairs clean animated charts, professional financial terminology cards, and premium minimalist badges. Instills trust and high educational authority.",
-    highlights: ["Animated chart overlays", "Clean badge designs", "Authority styling"],
-    captions: [
-      { text: "MAKE MONEY CRYPTO? 💸", color: "text-brand-gold" },
-      { text: "DON'T GET SCAMMED!", color: "text-white" },
-      { text: "SIMPLE FINANCE RULES 📊", color: "text-brand-gold" },
-      { text: "RULE #1: INVEST EARLY", color: "text-cyan-400" },
-      { text: "COMPOUND INTEREST 📈", color: "text-brand-gold" },
-      { text: "GROW YOUR WEALTH 🚀", color: "text-white" },
-      { text: "START TODAY!", color: "text-green-400" }
-    ]
   }
 ];
 
 export default function PhoneShowcase() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(true);
-  const [captionIndex, setCaptionIndex] = useState(0);
   
   const activeItem = CAROUSEL_IMAGES[currentIndex];
 
-  // Captions auto-animation
+  // Auto-advance slides every 4.5 seconds
   useEffect(() => {
-    let interval: NodeJS.Timeout;
-    if (isPlaying) {
-      interval = setInterval(() => {
-        setCaptionIndex((prev) => (prev + 1) % activeItem.captions.length);
-      }, 1500);
-    }
+    const interval = setInterval(() => {
+      nextSlide();
+    }, 4500);
     return () => clearInterval(interval);
-  }, [isPlaying, currentIndex, activeItem.captions.length]);
-
-  // Reset caption index when changing slides
-  useEffect(() => {
-    setCaptionIndex(0);
-  }, [currentIndex]);
-
-  const togglePlay = () => {
-    setIsPlaying(!isPlaying);
-  };
+  }, []);
 
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % CAROUSEL_IMAGES.length);
@@ -236,7 +183,7 @@ export default function PhoneShowcase() {
   };
 
   return (
-    <section className="bg-brand-dark py-16 border-t border-brand-card-light/40 relative overflow-hidden">
+    <section className="bg-brand-dark pt-6 pb-16 border-t border-brand-card-light/40 relative overflow-hidden">
       {/* Background Glows */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[350px] h-[350px] rounded-full bg-brand-gold/5 blur-[120px] pointer-events-none" />
 
@@ -248,7 +195,7 @@ export default function PhoneShowcase() {
             Validated <span className="text-brand-gold">Editing Styles</span>
           </h2>
           <p className="text-gray-400 text-sm sm:text-base mt-3 font-light">
-            Interactive demonstration showing how professional visual designs capture interest and hold attention.
+            I use proven techniques from top influencers to boost your retention, engagement, and growth.
           </p>
         </div>
 
@@ -287,7 +234,6 @@ export default function PhoneShowcase() {
               style={{ transform: `translateX(-${currentIndex * 100}%)` }}
             >
               {CAROUSEL_IMAGES.map((item, idx) => {
-                const isActive = idx === currentIndex;
                 return (
                   <div 
                     key={item.id}
@@ -311,77 +257,6 @@ export default function PhoneShowcase() {
                           alt={item.label}
                         />
 
-                        {/* Video overlay graphic elements mimicking viral video captions */}
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-black/40 pointer-events-none" />
-
-                        {/* Animated Captions */}
-                        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center z-10 px-4 select-none pointer-events-none drop-shadow-[0_4px_10px_rgba(0,0,0,0.9)] animate-bounce">
-                          {isActive && isPlaying ? (
-                            <span className={`font-display text-xl sm:text-2xl font-black tracking-widest uppercase block transform scale-110 transition-all duration-300 ${item.captions[captionIndex]?.color || 'text-white'}`}>
-                              {item.captions[captionIndex]?.text}
-                            </span>
-                          ) : (
-                            <div className="flex flex-col items-center gap-2">
-                              <span className="font-display text-yellow-400 text-lg sm:text-xl font-black tracking-wider uppercase block">
-                                PAUSED
-                              </span>
-                              <span className="font-sans text-black text-xs font-bold block px-3 py-1 bg-brand-gold backdrop-blur-sm rounded-full">
-                                {item.label}
-                              </span>
-                            </div>
-                          )}
-                        </div>
-
-                        {/* Dynamic Label Badge in bottom corner */}
-                        <div className="absolute top-10 left-4 z-10">
-                          <span className="font-mono text-[10px] font-bold text-white bg-black/60 backdrop-blur-sm px-2.5 py-1 rounded-full border border-white/10 flex items-center gap-1">
-                            <ImageIcon className="w-3 h-3 text-brand-gold" /> {item.label}
-                          </span>
-                        </div>
-
-                        {/* Simulated Seek Bar */}
-                        <div className="absolute bottom-2 left-4 right-4 z-10 bg-white/20 h-1 rounded-full overflow-hidden pointer-events-none">
-                          <div className={`h-full bg-brand-gold rounded-full transition-all duration-100 ${isActive && isPlaying ? 'w-2/3' : 'w-1/4'}`} />
-                        </div>
-
-                        {/* Centered Large Play Button when paused */}
-                        {(!isPlaying || !isActive) && (
-                          <button
-                            onClick={(e) => {
-                              e.stopPropagation();
-                              if (!isActive) {
-                                setCurrentIndex(idx);
-                                setIsPlaying(true);
-                              } else {
-                                togglePlay();
-                              }
-                            }}
-                            className="absolute inset-0 m-auto w-16 h-16 rounded-full bg-brand-gold/90 text-black flex items-center justify-center hover:scale-110 transition-transform active:scale-90 z-20 shadow-[0_0_20px_rgba(223,177,91,0.5)] cursor-pointer"
-                          >
-                            <Play className="w-8 h-8 fill-current translate-x-0.5" />
-                          </button>
-                        )}
-
-                        {/* Controls overlay (Bottom bar) */}
-                        <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between z-10">
-                          <button
-                            onClick={(e) => {
-                              e.stopPropagation();
-                              if (!isActive) {
-                                setCurrentIndex(idx);
-                                setIsPlaying(true);
-                              } else {
-                                togglePlay();
-                              }
-                            }}
-                            className="p-1.5 rounded-lg bg-black/60 backdrop-blur-sm text-white hover:bg-black/80 transition-colors cursor-pointer"
-                          >
-                            {isActive && isPlaying ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4" />}
-                          </button>
-                          <span className="font-mono text-[9px] text-gray-400 bg-black/40 px-2 py-0.5 rounded border border-white/5">
-                            Slide {idx + 1}/9
-                          </span>
-                        </div>
                       </div>
                     </div>
                   </div>
@@ -391,13 +266,12 @@ export default function PhoneShowcase() {
           </div>
 
           {/* Bullet Navigation Indicators */}
-          <div className="flex gap-2 mt-5">
+          <div className="flex gap-2 mt-6">
             {CAROUSEL_IMAGES.map((_, index) => (
               <button
                 key={index}
                 onClick={() => {
                   setCurrentIndex(index);
-                  setIsPlaying(true);
                 }}
                 className={`h-2 rounded-full transition-all duration-300 cursor-pointer ${
                   index === currentIndex 

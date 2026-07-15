@@ -4,7 +4,7 @@ import Hero from './components/Hero';
 import Stats from './components/Stats';
 import ResultsPortfolio from './components/ResultsPortfolio';
 import Timeline from './components/Timeline';
-import Comparison from './components/Comparison';
+import ObjectionsBenefits from './components/ObjectionsBenefits';
 import PhoneShowcase from './components/PhoneShowcase';
 import Pricing from './components/Pricing';
 import TrialSection from './components/TrialSection';
@@ -30,8 +30,8 @@ export default function App() {
         {/* Client Results Showcase and Video Portfolio Switching Tab */}
         <ResultsPortfolio />
 
-        {/* Common Editor vs LuzEdit Comparison Table */}
-        <Comparison />
+        {/* Client Objections and LuzEdit Benefits Comparison */}
+        <ObjectionsBenefits />
 
         {/* Interactive phone player carousel recreated */}
         <PhoneShowcase />

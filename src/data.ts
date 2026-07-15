@@ -128,35 +128,23 @@ export const PRICING_PLANS: PricingPlan[] = [
 
 export const FAQS: FAQItem[] = [
   {
-    question: 'How does the video submission process work?',
-    answer: 'It is extremely simple. You send the link to your raw footage (Google Drive, Dropbox, OneDrive, etc.) through our request form. We download the files, extract the best hooks, edit them using our viral engagement framework, and send the final ready-to-post file back to you.'
-  },
-  {
     question: 'What if I do not like the final video output?',
-    answer: 'We offer unlimited revisions! Our goal is to ensure you are 100% satisfied with the final video. Just leave a comment indicating the exact timestamps and what you want to change, and our team will adjust it rapidly.'
+    answer: 'I offer revisions according to your plan, with a minimum of 2 for each video. My goal is to ensure you are 100% satisfied with the final video. Just leave a comment indicating the exact timestamps and what you want to change, and I will adjust it.'
   },
   {
     question: 'What is the standard turnaround time?',
-    answer: 'For the On-Demand plan, we deliver videos within 48 business hours. In the Monthly plan, the average turnaround is 24 to 48 business hours per video. In the Dedicated Professional plan, since you have an exclusive editor, fast turnarounds can even be completed on the same day.'
-  },
-  {
-    question: 'Why not hire my own freelance editor?',
-    answer: 'Hiring freelance editors independently involves time-consuming screening, inconsistent deadlines, a lack of organic engagement knowledge, and high overall costs (plus payroll taxes). With us, you get elite editors constantly trained in social media retention, guaranteed strict deadlines, and a cost up to 3x lower than hiring a full-time staff editor.'
+    answer: 'For the On-Demand plan, we deliver videos within 36 business hours. In the Weekly plan, the average turnaround is 72 business hours for the 7 videos. In the Professional plan, the average turnaround is 5 business days for the 15 videos.'
   },
   {
     question: 'What types of videos do you edit?',
-    answer: 'We specialize in high-retention vertical formats: YouTube Shorts, Instagram Reels, TikToks, Podcast Highlights, and high-converting Paid Social Ads. We can also edit corporate videos, explainers, and VSLs upon request.'
+    answer: "I'm specialize in high-retention vertical formats: YouTube Shorts, Instagram Reels, TikToks, Podcast Highlights."
   },
   {
-    question: 'How do I send feedback?',
-    answer: 'You can send feedback directly through our request form or via WhatsApp. Let us know what changes are needed, and our editor will prioritize applying those corrections.'
+    question: 'How do I send the content?',
+    answer: 'You can send the raw footage or a link to your files (Google Drive, Dropbox, OneDrive, etc.).'
   },
   {
-    question: 'Can I pause or cancel my monthly plan?',
-    answer: 'Yes, absolutely! We do not lock you into any long-term contracts. You can pause or cancel your monthly or professional plan at any time directly through the billing dashboard or by speaking with us.'
-  },
-  {
-    question: 'What is the difference between the Monthly and Professional plans?',
-    answer: 'In the Monthly Premium plan, you have a limit of up to 30 videos per month and share a queue with general support. In the Dedicated Professional plan, you hire an exclusive editor who works solely on your brand or channel, delivering much higher volume, custom hooks, and active participation in script ideation.'
+    question: 'What is the final duration of the videos?',
+    answer: 'The final duration typically ranges from 30 seconds to 2 minutes, which is optimized for maximum retention and reach on short-form video platforms.'
   }
 ];

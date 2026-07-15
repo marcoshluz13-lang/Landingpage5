@@ -14,7 +14,7 @@ export default function FAQ() {
   };
 
   return (
-    <section id="faq" className="bg-brand-dark text-white py-16 md:py-24 relative border-t border-brand-card-light/20">
+    <section id="faq" className="bg-brand-dark text-white pt-6 md:pt-8 pb-12 md:pb-16 relative border-t border-brand-card-light/20">
       <div className="absolute top-1/4 right-0 w-72 h-72 rounded-full bg-brand-gold/5 blur-[130px] pointer-events-none" />
 
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">

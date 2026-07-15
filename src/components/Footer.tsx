@@ -1,11 +1,10 @@
 import React from 'react';
-import { Mail, MessageCircle, Instagram } from 'lucide-react';
+import { Mail, Instagram } from 'lucide-react';
 
 export default function Footer() {
   const socials = [
     { icon: Mail, href: 'mailto:marcoshluz13@gmail.com', label: 'Email' },
-    { icon: MessageCircle, href: 'https://wa.me/5511999999999', label: 'WhatsApp' },
-    { icon: Instagram, href: 'https://instagram.com', label: 'Instagram' }
+    { icon: Instagram, href: 'https://instagram.com/marcos_luz.editor', label: 'Instagram' }
   ];
 
   return (
@@ -18,10 +17,10 @@ export default function Footer() {
         {/* Title */}
         <div className="space-y-3">
           <h2 className="font-display text-3xl sm:text-4xl font-black tracking-tight text-white uppercase">
-            Get In Touch With Us
+            Get In Touch With Me
           </h2>
           <p className="text-white/80 text-xs sm:text-sm font-medium tracking-wide">
-            Questions, custom quotes, or brand requests? Send us a message right now!
+            Questions, custom quotes, or brand requests? Send me a message right now!
           </p>
         </div>
 
@@ -50,7 +49,7 @@ export default function Footer() {
             © 2026 Marcos Luz. All rights reserved.
           </span>
           <span className="font-bold hover:text-brand-gold transition-colors">
-            Developed by LuzEdit | Since 2016
+            Developed by Marcosedits | Since 2021
           </span>
         </div>
 

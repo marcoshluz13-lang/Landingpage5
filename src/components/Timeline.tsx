@@ -7,7 +7,7 @@ export default function Timeline() {
       num: '01',
       icon: Video,
       title: 'Record your content',
-      desc: 'Send me the raw footage of your weekly content just once'
+      desc: 'Send me the raw footage of your content just once'
     },
     {
       num: '02',
@@ -25,7 +25,7 @@ export default function Timeline() {
       num: '04',
       icon: MessageCircle,
       title: 'Your Review',
-      desc: 'Review the output and request any revisions or fine-tuning.'
+      desc: 'Check the output and request revisions or fine-tuning.'
     },
     {
       num: '05',
@@ -44,10 +44,10 @@ export default function Timeline() {
         {/* Title */}
         <div className="text-center max-w-2xl mx-auto mb-10">
           <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-black tracking-tight leading-tight">
-            Transform any footage into <span className="text-brand-gold">scroll-breaking videos.</span>
+            Transform any footage into <span className="text-brand-gold">SCROLL-BREAKING</span> <span className="text-white">videos.</span>
           </h2>
           <p className="text-gray-400 text-sm sm:text-base mt-4 font-light">
-            Our scientific editing method is straightforward and engineered to capture viewer retention from the very first second.
+            A straightforward editing method engineered to capture attention from second one.
           </p>
         </div>
 
@@ -75,10 +75,10 @@ export default function Timeline() {
                   </div>
 
                   {/* Text details */}
-                  <h3 className="font-display font-bold text-lg text-white mb-2 group-hover:text-brand-gold transition-colors">
+                  <h3 className="font-display font-bold text-xl sm:text-2xl text-white mb-2 group-hover:text-brand-gold transition-colors">
                     {step.title}
                   </h3>
-                  <p className="text-gray-400 text-xs sm:text-sm leading-relaxed font-light px-4">
+                  <p className="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed font-normal px-2">
                     {step.desc}
                   </p>
                 </div>
