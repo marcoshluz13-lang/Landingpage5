@@ -133,7 +133,7 @@ export const FAQS: FAQItem[] = [
   },
   {
     question: 'What is the standard turnaround time?',
-    answer: 'For the On-Demand plan, we deliver videos within 36 business hours. In the Weekly plan, the average turnaround is 72 business hours for the 7 videos. In the Professional plan, the average turnaround is 5 business days for the 15 videos.'
+    answer: 'For the On-Demand plan, we deliver videos within 36 hours. In the Weekly plan, the average turnaround is 72 hours for the 7 videos. In the Professional plan, the average turnaround is 5 business days for the 15 videos.'
   },
   {
     question: 'What types of videos do you edit?',
@@ -145,6 +145,6 @@ export const FAQS: FAQItem[] = [
   },
   {
     question: 'What is the final duration of the videos?',
-    answer: 'The final duration typically ranges from 30 seconds to 2 minutes, which is optimized for maximum retention and reach on short-form video platforms.'
+    answer: 'The final duration typically ranges from 30 seconds to 90 seconds, which is optimized for maximum retention and reach on short-form video platforms.'
   }
 ];
