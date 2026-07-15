@@ -13,8 +13,8 @@ export default function TrialSection() {
           <span className="text-brand-gold font-display text-sm font-bold uppercase tracking-widest block mb-2">
             Risk-Free Trial
           </span>
-          <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-black tracking-tight leading-tight">
-            See our quality for yourself. <br /><span className="text-brand-gold">No strings attached.</span>
+          <h2 className="font-display text-2xl sm:text-3xl md:text-4xl font-black tracking-tight leading-tight">
+            Put my quality to the test. <br /><span className="text-brand-gold">No strings attached.</span>
           </h2>
           <p className="text-gray-400 text-sm sm:text-base mt-4 font-light">
             Want to see the power of the editing on your own video before committing? Order a free trial edit.
